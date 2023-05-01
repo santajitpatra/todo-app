@@ -4,15 +4,15 @@ import { LogoutBtn } from "../components/Clients"
 
 const header = () => {
   return (
-    <div className="flex flex-row justify-between p-4">
-      <div>
-        <h2>booking app</h2>
+    <div className="flex flex-row justify-between p-5 bg-white mb-2">
+      <div className=" mx-5">
+        <h2 className="text-xl font-semibold">Booking App</h2>
       </div>
-      <article className="flex flex-row">
-        <Link className="mx-2" href={"/"}>
+      <article className="flex flex-row ">
+        <Link className="mx-5" href={"/"}>
           Home
         </Link>
-        <Link className="mx-2" href={"/about"}>
+        <Link className="mx-5" href={"/about"}>
           About
         </Link>
 

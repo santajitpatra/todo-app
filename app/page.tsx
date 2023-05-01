@@ -9,7 +9,7 @@ const page = () => {
       <section className="flex justify-center items-center">
         <TodoItem
           title={"Sample Task"}
-          descriptions={"add some thing here"}
+          description={"add some thing here"}
           id={"SimpleID"}
           completed={true}
         />

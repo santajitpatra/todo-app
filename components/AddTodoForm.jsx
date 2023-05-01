@@ -14,7 +14,7 @@ const AddTodoForm = () => {
           />
           <input
             type="text"
-            placeholder="Task Descriptions"
+            placeholder="Task Description"
             className="h-12 w-96 m-4 p-4 border border-black rounded"
           />
           <button

@@ -2,12 +2,12 @@
 
 import React from "react";
 
-export const TodoItem = ({ title, descriptions, id, completed }) => {
+export const TodoItem = ({ title, description, id, completed }) => {
   return (
     <div className="bg-white w-1/2 p-4 m-4 flex justify-between items-center ">
       <div>
         <h4>{title}</h4>
-        <p>{descriptions}</p>
+        <p>{description}</p>
       </div>
       <div>
         <TodoButton id={id} completed={completed} />

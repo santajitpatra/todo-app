@@ -22,7 +22,7 @@ export const LogoutBtn = () => {
       user.id ? (
         <button onClick={logoutHandler}>Logout</button>
       ) : (
-        <Link className="mx-2" href={"/login"}>
+        <Link className="mx-5" href={"/login"}>
           LogIn
         </Link>
       )
