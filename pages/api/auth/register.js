@@ -5,13 +5,13 @@ import {
   cookieSetter,
   generateToken,
 } from "../../../utils/features";
-
+import bcrypt from "bcrypt";
 
 const handler = asyncError(async (req, res) => {
-    if (req.method !== "POST")
+  if (req.method !== "POST")
     return errorHandler(res, 400, "Only POST Method is allowed");
 
-  const {name, email, password } = req.body;
+  const { name, email, password } = req.body;
 
   if (!name || !email || !password)
     return errorHandler(req, 400, "please provide all required fields");
@@ -22,10 +22,12 @@ const handler = asyncError(async (req, res) => {
 
   if (user) return errorHandler(req, 400, "User required with this email");
 
+  const hashedPassword = await bcrypt.hash(password, 10);
+
   user = await User.create({
     name,
     email,
-    password,
+    password: hashedPassword,
   });
 
   const token = generateToken(user._id);
