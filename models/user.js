@@ -1,20 +1,21 @@
 import mongoose from "mongoose";
 
 const schema = new mongoose.Schema({
-    name: {
-        type: String,
-        require: true,
-    },
-    email: {
-        type: String,
-        unique: true,
-        require: true,
-    },
-    password: {
-        type: String,
-        require: true,
-        minLength: [6,"Password must be at least 6 characters"]
-    },
+  name: {
+    type: String,
+    required: true,
+  },
+  email: {
+    type: String,
+    unique: true,
+    required: true,
+  },
+  password: {
+    type: String,
+    required: true,
+    select: false,
+    minLength: [6, "Password too short"],
+  },
 });
 
 mongoose.models = {};
