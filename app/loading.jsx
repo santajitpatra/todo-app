@@ -1,11 +1,9 @@
-import  Styles  from "../styles/common.css"
+import React from "react";
 
-const loading = () => {
-  return (
-    <section className={Styles.loading_section}>
-      <div className={Styles.loading}></div>
-    </section>
-  )
-}
+const Loading = () => {
+  return <div className="loading_section">
+    <div className="loading"></div>
+  </div>;
+};
 
-export default loading
+export default Loading;

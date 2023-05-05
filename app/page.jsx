@@ -1,21 +1,17 @@
-import React from "react";
-import Form from "../components/AddTodoForm";
-import { TodoItem } from "../components/ServerComponents";
+import React, { Suspense } from "react";
+import Form from "./addTodoForm";
+import Todos from "./todos";
 
-const page = () => {
+const Page = async () => {
   return (
-    <div className="">
+    <div className="container">
       <Form />
-      <section className="flex justify-center items-center">
-        <TodoItem
-          title={"Sample Task"}
-          description={"add some thing here"}
-          id={"SimpleID"}
-          completed={true}
-        />
-      </section>
+
+      <Suspense fallback={<div>loading...</div>}>
+        <Todos />
+      </Suspense>
     </div>
   );
 };
 
-export default page;
+export default Page;

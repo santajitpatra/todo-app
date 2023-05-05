@@ -43,30 +43,22 @@ const AddTodoForm = () => {
   if (!user._id) return redirect("/login");
 
   return (
-    <div className="flex justify-center items-center">
-      <section className="w-1/2 bg-white">
-        <form onSubmit={submitHandler} className="flex flex-col justify-center items-center">
+    <div className="login">
+      <section>
+        <form onSubmit={submitHandler}>
           <input
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             type="text"
             placeholder="Task Title"
-            className="h-12 w-96 m-4 p-4 border border-black rounded"
           />
           <input
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             type="text"
             placeholder="Task Description"
-            className="h-12 w-96 m-4 p-4 border border-black rounded"
           />
-          <button
-            type="submit"
-            className="btn-primary"
-          >
-         ADD TASK
-          </button>
-         
+          <button type="submit">Add Task</button>
         </form>
       </section>
     </div>

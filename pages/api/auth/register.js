@@ -14,13 +14,13 @@ const handler = asyncError(async (req, res) => {
   const { name, email, password } = req.body;
 
   if (!name || !email || !password)
-    return errorHandler(req, 400, "please provide all required fields");
+    return errorHandler(res, 400, "Please enter all fields");
 
   await connectDB();
 
   let user = await User.findOne({ email });
 
-  if (user) return errorHandler(req, 400, "User required with this email");
+  if (user) return errorHandler(res, 400, "User registered with this email");
 
   const hashedPassword = await bcrypt.hash(password, 10);
 
@@ -36,8 +36,8 @@ const handler = asyncError(async (req, res) => {
 
   res.status(201).json({
     success: true,
-    message: "Registered successfully",
-    // user,
+    message: "Registered Successfully",
+    user,
   });
 });
 

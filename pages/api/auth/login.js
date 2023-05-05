@@ -14,17 +14,17 @@ const handler = asyncError(async (req, res) => {
   const { email, password } = req.body;
 
   if (!email || !password)
-    return errorHandler(req, 400, "please provide all required fields");
+    return errorHandler(res, 400, "Please enter all fields");
 
   await connectDB();
 
   const user = await User.findOne({ email }).select("+password");
 
-  if (!user) return errorHandler(req, 400, "Invalid username or password");
+  if (!user) return errorHandler(res, 400, "Invalid Email or Password");
 
   const isMatch = await bcrypt.compare(password, user.password);
 
-  if (isMatch) return errorHandler(req, 400, "Invalid username or password");
+  if (!isMatch) return errorHandler(res, 400, "Invalid Email or Password");
 
   const token = generateToken(user._id);
 
@@ -32,7 +32,8 @@ const handler = asyncError(async (req, res) => {
 
   res.status(200).json({
     success: true,
-    message: `LogIn successfully Mr. ${user.name}`,
+    message: `Welcome back, ${user.name}`,
+    user,
   });
 });
 

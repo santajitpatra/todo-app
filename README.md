@@ -18,11 +18,11 @@
 <a href="https://instagram.com/santajitpatra" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="santajitpatra" height="30" align="left" width="40" /></a>
 <a href="https://www.youtube.com/@santajitpatra" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="santajitpatra" height="30" align="left" width="40" /></a>
 <a href="https://discord.gg/4313" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="4313" height="30" align="left" width="40" /></a>
+
 </p>
 </br>
 <h1 align="left">Languages and Tools I love playing around with:
 </h1>
-
 
 <P>
 
@@ -46,11 +46,20 @@
 <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40" align="left"/> </a>
 <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40" align="left"/> </a>
 <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40" align="left"/> </a>
+<a href="https://www.sanity.io/" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/17177659?s=280&v=4" alt="sanity" width="40" height="40"  align="left"/> </a>
 </P>
 
+
+<br/>
+<br>
+</br>
+<br>
 </br>
 
-<h2>My stats:</h2>
+<h1>My stats:</h1>
+
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=santajitpatra&show_icons=true&locale=en&layout=compact" alt="santajitpatra" /></p>
+
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=santajitpatra&show_icons=true&locale=en" alt="santajitpatra" /></p>
+
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=santajitpatra&" alt="santajitpatra" /></p>
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=santajitpatra&show_icons=true&locale=en" alt="santajitpatra" />
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=santajitpatra&show_icons=true&locale=en&layout=compact" alt="santajitpatra" /></p></p>

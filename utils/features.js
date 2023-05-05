@@ -4,12 +4,11 @@ import jwt from "jsonwebtoken";
 import { User } from "../models/user";
 
 export const connectDB = async () => {
-  const { connection } = await mongoose.connect(process.env.MONGO_URL, {
-    dbName: "TodoNext",
+  const { connection } = await mongoose.connect(process.env.MONGO_URI, {
+    dbName: "Todo13",
   });
-  console.log(`Database Connection on ${connection.host}`);
+  console.log(`Database Connected on ${connection.host}`);
 };
-
 export const cookieSetter = (res, token, set) => {
   res.setHeader(
     "Set-Cookie",
